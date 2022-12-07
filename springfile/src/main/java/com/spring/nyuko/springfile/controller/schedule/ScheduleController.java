@@ -1,7 +1,7 @@
-package com.spring.nyuko.springfile.controller;
+package com.spring.nyuko.springfile.controller.schedule;
 
 import com.spring.nyuko.springfile.model.Schedule;
-import com.spring.nyuko.springfile.service.ScheduleService;
+import com.spring.nyuko.springfile.service.schedule.ScheduleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

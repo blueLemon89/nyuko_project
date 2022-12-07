@@ -1,4 +1,4 @@
-package com.spring.nyuko.springfile.service;
+package com.spring.nyuko.springfile.service.schedule;
 
 import com.spring.nyuko.springfile.model.Schedule;
 
