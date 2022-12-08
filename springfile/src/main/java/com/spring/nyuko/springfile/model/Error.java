@@ -55,4 +55,8 @@ public class Error {
     public void setError_name(String error_name) {
         this.error_name = error_name;
     }
+
+    public Error(String error_name) {
+        this.error_name = error_name;
+    }
 }

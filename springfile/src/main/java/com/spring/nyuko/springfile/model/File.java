@@ -2,7 +2,9 @@ package com.spring.nyuko.springfile.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table(name = "file")
@@ -16,6 +18,14 @@ public class File {
 
     @Column(name = "file_name")
     private String file_name;
+
+    @Getter
+    @Setter
+    private String url;
+
+    public File(String file_name) {
+        this.file_name = file_name;
+    }
 
     public Long getFile_id() {
         return file_id;
@@ -31,5 +41,10 @@ public class File {
 
     public void setFile_name(String file_name) {
         this.file_name = file_name;
+    }
+
+    public File(String file_name, String url) {
+        this.file_name = file_name;
+        this.url = url;
     }
 }
